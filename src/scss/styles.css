@@ -1,3 +1,71 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: -webkit-linear-gradient(to right, cadetblue, #86A8E7, #7F7FD5);
+  background: linear-gradient(to right, cadetblue, #86A8E7, #7F7FD5); }
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; }
+
+.App {
+  width: 600px;
+  height: 700px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px; }
+  .App form {
+    width: 100%;
+    padding: 20px 0; }
+    .App form > div {
+      display: flex; }
+      .App form > div .message_text {
+        flex: 3;
+        height: 50px;
+        margin: 0; }
+        .App form > div .message_text > label {
+          color: cadetblue; }
+        .App form > div .message_text > div:before {
+          border-bottom: 1px solid cadetblue; }
+      .App form > div .submit_message {
+        margin-left: 20px;
+        background-color: cadetblue; }
+  .App .message_list_wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-y: auto;
+    list-style: none;
+    padding: 0; }
+    .App .message_list_wrapper li {
+      display: flex;
+      margin-bottom: 10px; }
+      .App .message_list_wrapper li .message_text {
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: 10px;
+        border-radius: 25px;
+        padding: 10px;
+        position: relative; }
+      .App .message_list_wrapper li.me {
+        justify-content: flex-end; }
+        .App .message_list_wrapper li.me .message_text {
+          margin-right: 10px;
+          background-color: cadetblue; }
+      .App .message_list_wrapper li.else {
+        justify-content: flex-start; }
+        .App .message_list_wrapper li.else .message_text {
+          order: 1;
+          margin-left: 10px;
+          background-color: #78e08f; }
+        .App .message_list_wrapper li.else .message_avatar {
+          order: 0;
+          background-color: cadetblue; }
 
 /*# sourceMappingURL=styles.css.map */
