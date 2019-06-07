@@ -1,14 +1,18 @@
 body {
   margin: 0;
   padding: 0;
-  background: -webkit-linear-gradient(to right, cadetblue, #86A8E7, #7F7FD5);
-  background: linear-gradient(to right, cadetblue, #86A8E7, #7F7FD5); }
+  background: -webkit-linear-gradient(to right, #606c88, #3f4c6b);
+  background: linear-gradient(to right, #606c88, #3f4c6b); }
 
 #root {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh; }
+
+.App_title {
+  text-align: center;
+  color: cadetblue; }
 
 .App {
   width: 600px;
@@ -33,6 +37,8 @@ body {
           color: cadetblue; }
         .App form > div .message_text > div:before {
           border-bottom: 1px solid cadetblue; }
+        .App form > div .message_text > div:after {
+          border-bottom: 1px solid #78e08f; }
       .App form > div .submit_message {
         margin-left: 20px;
         background-color: cadetblue; }

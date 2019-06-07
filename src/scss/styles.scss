@@ -3,8 +3,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: -webkit-linear-gradient(to right, cadetblue, #86A8E7, #7F7FD5);
-  background: linear-gradient(to right, cadetblue, #86A8E7, #7F7FD5);
+  background: -webkit-linear-gradient(to right, #606c88, #3f4c6b);
+  background: linear-gradient(to right, #606c88, #3f4c6b);
 }
 
 #root {
@@ -13,7 +13,10 @@ body {
   align-items: center;
   height: 100vh;
 }
-
+.App_title{
+  text-align: center;
+  color:$primary-color;
+}
 .App {
   width: 600px;
   height: 700px;
@@ -44,6 +47,10 @@ body {
         > div {
           &:before {
             border-bottom: 1px solid $primary-color;
+
+          }
+          &:after{
+            border-bottom: 1px solid $secondary-color;
           }
         }
       }

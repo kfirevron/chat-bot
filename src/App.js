@@ -10,9 +10,15 @@ const userAvatar = cartoonAvatar.generate_avatar();
 
 function App() {
     return (
-        <div className="App">
-            <MessageList userAvatar={userAvatar} userId={userId}/>
-            <FormComponent userAvatar={userAvatar} userId={userId}/>
+        <div>
+            <div className="App_title">
+                <h1>Chat Room</h1>
+            </div>
+            <div className="App">
+                <MessageList userAvatar={userAvatar} userId={userId}/>
+                <FormComponent userAvatar={userAvatar} userId={userId}/>
+            </div>
+
         </div>
     );
 }

@@ -21,9 +21,11 @@ class FormComponent extends React.Component {
         e.preventDefault();
         const {textMessage} = this.state;
         const {userAvatar, userId} = this.props;
+        //simple validation if empty return
         if (!textMessage) {
             return
         }
+
         this.socket.emit('chat message', {textMessage, userId, userAvatar});
         this.clearMessage();
     };
@@ -44,7 +46,6 @@ class FormComponent extends React.Component {
                             onChange={this.handleChange}
                             margin="normal"
                             variant="filled"
-
                         />
                         <Fab type="submit" disabled={!textMessage} className="submit_message" color="primary"
                              aria-label="Add">

@@ -21,6 +21,7 @@ class MessageList extends React.Component {
         });
         this.socket.on('bot answer', msg => {
             this.setState({messages: [...this.state.messages, msg]});
+            //each time that message was added scroll automatically to the bottom of the message list.
             this.scrollToBottom();
         });
     };
@@ -32,12 +33,13 @@ class MessageList extends React.Component {
     renderMessageItem = () => {
         const {messages} = this.state;
         const {userId} = this.props;
-        console.log(messages);
         return messages.map((message, i) => {
             return (<MessageItem key={i} userAvatar={messages.userAvatar} userId={userId} message={message}/>);
         });
     };
     scrollToBottom = () => {
+        //scroll to the bottom of the message list
+        //using native event
         this.messagesEndRef.current.scrollIntoView({ behavior: 'smooth' });
     };
 
