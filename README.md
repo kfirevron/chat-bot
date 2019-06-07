@@ -1,6 +1,6 @@
 # Chat Bot React App
 
-Chat room with bot for multiple users
+Chat room with chat bot for multiple users
 
 ## Getting Started
 
@@ -56,6 +56,11 @@ and when asked to open in new port tap Y to open in new location with diffrent p
 
 * [React](https://reactjs.org/docs/getting-started.html) - The web framework used
 * [NodeJs](https://nodejs.org/en/get-involved) - The server framework used
+
+## Node Modules
+* [Material-UI](https://material-ui.com/getting-started/installation/) - The web components and styles.
+* [Socket-IO](https://socket.io/)
+
 
 ## Authors
 
