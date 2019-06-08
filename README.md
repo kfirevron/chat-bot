@@ -32,11 +32,7 @@ yarn
 cd/server to start the proxy server
 
 ```
-node start.js
-```
-with nodemon
-```
-nodemon start.js
+yarn start
 ```
 
 main directory run
