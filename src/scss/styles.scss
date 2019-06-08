@@ -45,6 +45,9 @@ body {
         }
 
         > div {
+          input{
+            color: $primary-color;
+          }
           &:before {
             border-bottom: 1px solid $primary-color;
 

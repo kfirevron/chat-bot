@@ -35,6 +35,8 @@ body {
         margin: 0; }
         .App form > div .message_text > label {
           color: cadetblue; }
+        .App form > div .message_text > div input {
+          color: cadetblue; }
         .App form > div .message_text > div:before {
           border-bottom: 1px solid cadetblue; }
         .App form > div .message_text > div:after {

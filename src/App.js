@@ -12,7 +12,7 @@ function App() {
     return (
         <div>
             <div className="App_title">
-                <h1>Chat Room</h1>
+                <h1>Chat Bot</h1>
             </div>
             <div className="App">
                 <MessageList userAvatar={userAvatar} userId={userId}/>
